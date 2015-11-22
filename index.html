@@ -12,10 +12,9 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-tokenfield.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="css/icsa.css" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/bootstrap-tokenfield.min.css" rel="stylesheet">
 
     <!--<script src= "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>-->
 
@@ -23,6 +22,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap-tokenfield.min.js"></script>
     <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/icsa.js"></script>
 </head>
 
 <body>
@@ -32,19 +32,24 @@
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-            <a class="navbar-brand" href="#">Projects</a>
+            <a class="navbar-brand" href="index.html">Find a solution</a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li>
-                    <a href="#">Issues</a>
+                    <a href="#">Cases</a>
                 </li>
                 <li>
-                    <a href="#">Services</a>
+                    <a href="#">Projects</a>
                 </li>
                 <li>
-                    <a href="#">Contact</a>
+                    <a href="#">People</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#">Log In</a>
                 </li>
             </ul>
         </div>
@@ -58,40 +63,77 @@
 
     <div class="row">
 
-        <div class="col-md-3">
-            <p class="lead">Projects</p>
-            <div class="list-group">
-                <a href="#" class="list-group-item">QMF/DQ</a>
-                <a href="#" class="list-group-item">CorVu NG</a>
-                <a href="#" class="list-group-item">BI 2Go</a>
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">Products</div>
+                <table class="table">
+                    <thead>
+                    <th>Product name</th>
+                    <th>Tech Support Manager</th>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Aldon Analyzer</td>
+                        <td>Joseph Fraser</td>
+                    </tr>
+                    <tr>
+                        <td>Arkivio Autoexplore</td>
+                        <td>Liz Barnes</td>
+                    </tr>
+                    <tr>
+                        <td>BlueZone Access Server</td>
+                        <td>Joseph Fraser</td>
+                    </tr>
+                    <tr>
+                        <td>CorBusiness</td>
+                        <td>Mark Woodall</td>
+                    </tr>
+                    <tr>
+                        <td>LegaSuite Insight</td>
+                        <td>Linus Olson</td>
+                    </tr>
+                    <tr>
+                        <td>D3 AIX</td>
+                        <td>Bryan Glassick</td>
+                    </tr>
+                    <tr>
+                        <td>DB2 Archive Log Accelerator for z/OS</td>
+                        <td>Mark Tucker</td>
+                    </tr>
+                    <tr>
+                        <td>RSearch</td>
+                        <td>Mark Woodall</td>
+                    </tr>
+                    <tr>
+                        <td>iCluster</td>
+                        <td>Liz Barnes</td>
+                    </tr>
+                    <tr>
+                        <td>LegaSuite GUI</td>
+                        <td>Joseph Fraser</td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
 
-        <div class="col-md-9">
+        <div class="col-md-8">
             <input type="text" class="form-control" id="tokenfield" value="red,green,blue" />
             <div class="grid js-masonry">
                 <div class="grid-item col-sm-4 col-lg-4 col-md-4">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h4><i class="fa fa-fw fa-compass"></i> Easy to Use</h4>
+                            <h4><p class="pull-right"><span class="glyphicon glyphicon glyphicon-education"></span></p></h4>
+                            <h4>Easy to Use</h4>
                         </div>
                         <div class="panel-body">
                             <div class="caption">
-                                <h4 class="pull-right">$24.99</h4>
-                                <h4><a href="#">First Product</a>
+                                <h4 class="pull-right">95%</h4>
+                                <h4><a href="#">First solution</a>
                                 </h4>
-                                <p>See more snippets like this online store item at <a target="_blank" href="http://www.bootsnipp.com">Bootsnipp - http://bootsnipp.com</a>.</p>
+                                <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             </div>
-                            <div class="ratings">
-                                <p class="pull-right">15 reviews</p>
-                                <p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                </p>
-                            </div>
+                            <p class="pull-right"><a class="btn btn-default glyphicon glyphicon-thumbs-up"></a></p>
                         </div>
                     </div>
                 </div>
@@ -99,25 +141,17 @@
                 <div class="grid-item col-sm-4 col-lg-4 col-md-4">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h4><i class="fa fa-fw fa-compass"></i> Easy to Use</h4>
+                            <h4><p class="pull-right"><span class="glyphicon glyphicon glyphicon-education"></span></p></h4>
+                            <h4>Easy to Use</h4>
                         </div>
                         <div class="panel-body">
                             <div class="caption">
-                                <h4 class="pull-right">$64.99</h4>
-                                <h4><a href="#">Second Product</a>
+                                <h4 class="pull-right">95%</h4>
+                                <h4><a href="#">First solution</a>
                                 </h4>
-                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             </div>
-                            <div class="ratings">
-                                <p class="pull-right">12 reviews</p>
-                                <p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                </p>
-                            </div>
+                            <p class="pull-right"><a class="btn btn-default glyphicon glyphicon-thumbs-up"></a></p>
                         </div>
                     </div>
                 </div>
@@ -125,25 +159,17 @@
                 <div class="grid-item col-sm-4 col-lg-4 col-md-4">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                                <h4><i class="fa fa-fw fa-compass"></i> Easy to Use</h4>
+                            <h4><p class="pull-right"><span class="glyphicon glyphicon glyphicon-education"></span></p></h4>
+                            <h4>Easy to Use</h4>
                         </div>
                         <div class="panel-body">
                             <div class="caption">
-                                <h4 class="pull-right">$74.99</h4>
-                                <h4><a href="#">Third Product</a>
+                                <h4 class="pull-right">95%</h4>
+                                <h4><a href="#">First solution</a>
                                 </h4>
-                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             </div>
-                            <div class="ratings">
-                                <p class="pull-right">31 reviews</p>
-                                <p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                </p>
-                            </div>
+                            <p class="pull-right"><a class="btn btn-default glyphicon glyphicon-thumbs-up"></a></p>
                         </div>
                     </div>
                 </div>
@@ -151,25 +177,17 @@
                 <div class="grid-item col-sm-4 col-lg-4 col-md-4">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h4><i class="fa fa-fw fa-compass"></i> Easy to Use</h4>
+                            <h4><p class="pull-right"><span class="glyphicon glyphicon glyphicon-education"></span></p></h4>
+                            <h4>Easy to Use</h4>
                         </div>
                         <div class="panel-body">
                             <div class="caption">
-                                <h4 class="pull-right">$84.99</h4>
-                                <h4><a href="#">Fourth Product</a>
+                                <h4 class="pull-right">95%</h4>
+                                <h4><a href="#">First solution</a>
                                 </h4>
-                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             </div>
-                            <div class="ratings">
-                                <p class="pull-right">6 reviews</p>
-                                <p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                </p>
-                            </div>
+                            <p class="pull-right"><a class="btn btn-default glyphicon glyphicon-thumbs-up"></a></p>
                         </div>
                     </div>
                 </div>
@@ -177,25 +195,17 @@
                 <div class="grid-item col-sm-4 col-lg-4 col-md-4">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h4><i class="fa fa-fw fa-compass"></i> Easy to Use</h4>
+                            <h4><p class="pull-right"><span class="glyphicon glyphicon glyphicon-education"></span></p></h4>
+                            <h4>Easy to Use</h4>
                         </div>
                         <div class="panel-body">
                             <div class="caption">
-                                <h4 class="pull-right">$94.99</h4>
-                                <h4><a href="#">Fifth Product</a>
+                                <h4 class="pull-right">95%</h4>
+                                <h4><a href="#">First solution</a>
                                 </h4>
-                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             </div>
-                            <div class="ratings">
-                                <p class="pull-right">18 reviews</p>
-                                <p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                </p>
-                            </div>
+                            <p class="pull-right"><a class="btn btn-default glyphicon glyphicon-thumbs-up"></a></p>
                         </div>
                     </div>
                 </div>
@@ -203,36 +213,32 @@
                 <div class="grid-item col-sm-4 col-lg-4 col-md-4">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h4><i class="fa fa-fw fa-compass"></i> Easy to Use</h4>
+                            <h4><p class="pull-right"><span class="glyphicon glyphicon glyphicon-education"></span></p></h4>
+                            <h4>Easy to Use</h4>
                         </div>
                         <div class="panel-body">
                             <div class="caption">
-                                <h4 class="pull-right">$54.99</h4>
-                                <h4><a href="#">Sixth Product</a>
+                                <h4 class="pull-right">95%</h4>
+                                <h4><a href="#">First solution</a>
                                 </h4>
-                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             </div>
-                            <div class="ratings">
-                                <p class="pull-right">8 reviews</p>
-                                <p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                </p>
-                            </div>
+                            <p class="pull-right"><a class="btn btn-default glyphicon glyphicon-thumbs-up"></a></p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-
+            <div class="col-md-4 center-block">
+            </div>
+            <div class="col-md-4 center-block">
+                <p><a class="btn btn-primary btn-lg center-block" href="#" role="button">Load more</a></p>
+            </div>
         </div>
 
     </div>
 
 </div>
+
 <!-- /.container -->
 
 <div class="container">
@@ -242,8 +248,7 @@
     <!-- Footer -->
     <footer>
         <div class="row">
-            <div class="col-lg-12">
-            </div>
+            <div class="col-lg-12"/>
         </div>
     </footer>
 
@@ -251,9 +256,5 @@
 <!-- /.container -->
 
 </body>
-
-<script type="text/javascript">
-    $('#tokenfield').tokenfield();
-</script>
 
 </html>
