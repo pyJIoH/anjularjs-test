@@ -33,9 +33,10 @@ body {
 }
 
 .grid-item {
-    width: 30%;
+    width: 31%;
     min-width: 250px;
-    margin-left: 20px;
+    max-width: 400px;
+    margin-left: 2%;
 }
 
 /*.tokenfield .token {*/
