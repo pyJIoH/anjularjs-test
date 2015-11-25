@@ -34,9 +34,21 @@ body {
 
 .grid-item {
     width: 31%;
-    min-width: 250px;
-    max-width: 400px;
+    /*min-width: 300px;*/
+    /*max-width: 400px;*/
     margin-left: 2%;
+}
+
+.grid-item.expanded {
+    width: 98%;
+    /*min-width: 600px;*/
+    /*max-width: 800px;*/
+    height: auto;
+    margin-left: 2%;
+}
+
+.panel-heading {
+    cursor: pointer;
 }
 
 /*.tokenfield .token {*/

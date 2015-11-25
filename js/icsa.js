@@ -16,6 +16,21 @@
             })
             .tokenfield()
 
+        $('.panel-heading').on('click', function(data){
+            var header = $(data.target);
+            var panel = header.parents('.grid-item');
+            var isExpanded = panel.hasClass('expanded');
+            $('.grid-item').each(function(index, element){
+                $(element).removeClass('expanded');
+            });
+            if (!isExpanded) {
+                panel.addClass('expanded');
+            }
+            var grid = header.parents('.grid');
+            grid.masonry();
+
+        }.bind(this));
+
     });
 
 } (this, jQuery));
