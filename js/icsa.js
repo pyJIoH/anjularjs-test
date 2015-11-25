@@ -23,12 +23,12 @@
             $('.grid-item').each(function(index, element){
                 $(element).removeClass('expanded');
             });
-            if (!isExpanded) {
+
+            if (!isExpanded)
                 panel.addClass('expanded');
-            }
+
             var grid = header.parents('.grid');
             grid.masonry();
-
         }.bind(this));
 
     });
