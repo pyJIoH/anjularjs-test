@@ -34,13 +34,13 @@ body {
 
 .grid-item {
     width: 250px;
-    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .grid-item.expanded {
     width: 790px;
     height: auto;
-    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .panel-heading-grid {
