@@ -33,27 +33,19 @@ body {
 }
 
 .grid-item {
-    width: 31%;
-    /*min-width: 300px;*/
-    /*max-width: 400px;*/
-    margin-left: 2%;
+    width: 250px;
+    margin-left: 20px;
 }
 
 .grid-item.expanded {
-    width: 98%;
-    /*min-width: 600px;*/
-    /*max-width: 800px;*/
+    width: 790px;
     height: auto;
-    margin-left: 2%;
+    margin-left: 20px;
 }
 
-.panel-heading {
+.panel-heading-grid {
     cursor: pointer;
 }
-
-/*.tokenfield .token {*/
-    /*background-color: #ffd8dc;*/
-/*}*/
 
 footer {
     margin: 50px 0;
