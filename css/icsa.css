@@ -32,17 +32,6 @@ body {
     white-space: nowrap;
 }
 
-.grid-item {
-    width: 250px;
-    margin-right: 20px;
-}
-
-.grid-item.expanded {
-    width: 790px;
-    height: auto;
-    margin-right: 20px;
-}
-
 .panel-heading-grid {
     cursor: pointer;
 }

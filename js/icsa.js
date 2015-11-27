@@ -1,6 +1,12 @@
 (function(root, $, undefined) {
     'use strict';
 
+    jQuery.fn.openDetails = function(){
+        //this.each(function(){
+        //    $(this).css("color","blue");
+        //});
+    }
+
     $(function () {
         $('#tokenfield').tokenfield();
 
@@ -19,15 +25,6 @@
         $('.panel-heading').on('click', function(data){
             var header = $(data.target);
             var panel = header.parents('.grid-item');
-            var isExpanded = panel.hasClass('expanded');
-            $('.grid-item').each(function(index, element){
-                $(element).removeClass('expanded');
-            });
-
-            if (!isExpanded)
-                panel.addClass('expanded');
-
-            $('.grid').masonry();
         }.bind(this));
 
         $('#btn-load-more').on('click', function(data){
@@ -41,7 +38,6 @@
             });
 
             $(".grid").html(orderedTabs);
-            //$('.grid').masonry();
         })
 
     });
