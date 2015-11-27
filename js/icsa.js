@@ -32,10 +32,6 @@
             var orderedTabs = $divs.sort(function (a, b) {
                 return $(a).data('relevant') < $(b).data('relevant');
             });
-            $(orderedTabs).each(function(index) {
-                this.style.left = '0px';
-                this.style.top = '0px';
-            });
 
             $(".grid").html(orderedTabs);
         })
